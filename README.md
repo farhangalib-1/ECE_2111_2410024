@@ -48,6 +48,7 @@
 
 | Lab Task | Title | Link |
 | :---: | :---: | :---: |
+| 00 | Installation of LogiSim |[LAB-1](https://github.com/farhangalib-1/ECE_2111_2410024/blob/main/Lab%20Report/Lab-00.md)|
 | 01 | Introduction of LOGISIM and Implementation of Basic Logic Gates |[LAB-1](https://github.com/farhangalib-1/ECE_1204_2410024/blob/main/Lab-reports/LAB-1.md)|
 
  
