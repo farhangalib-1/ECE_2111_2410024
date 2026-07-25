@@ -319,19 +319,16 @@ In this experiment, we will implement a Binary to BCD (Binary-Coded Decimal) con
    - The circuit design will involve creating logic expressions for each BCD output bit (D₄, D₃, D₂, D₁) which will be displayed on the BCD to seven-segment display based on the binary input bits (B₃, B₂, B₁, B₀).
 
 3. **Circuit Design:**
-   - Connect the binary input bits (B₃, B₂, B₁, B₀) to the Binary to BCD converter circuit.
-   ![alt text](image-27.png)
-   - The circuit will produce the corresponding BCD output bits (D₄, D₃, D₂, D₁) based on the input binary number which will be displayed on the BCD to seven-segment display.
-   ![alt text](image-28.png)
+  <img width="582" height="254" alt="image" src="https://github.com/user-attachments/assets/46fa12a2-6da9-480b-8c32-7e7fa371499d" />
+
 4. **Testing the Circuit:**
    - Apply different combinations of binary inputs (B₃, B₂, B₁, B₀) to the circuit and observe the BCD outputs (D₄, D₃, D₂, D₁).
    - Verify that the outputs match the expected results of the Binary to BCD conversion.
-   ![alt text](image-29.png)
-   ![alt text](image-30.png)
-   ![alt text](image-31.png)
+   !<img width="582" height="254" alt="image" src="https://github.com/user-attachments/assets/c11082e5-e660-41f3-b28f-73bc619f6573" />
+<img width="656" height="302" alt="image" src="https://github.com/user-attachments/assets/3a845e05-463a-40a0-a522-4d0bb1d8d237" />
+<img width="655" height="275" alt="image" src="https://github.com/user-attachments/assets/d7aea595-b42d-430b-8314-22d92d1f60a3" />
+
 
 **Conclusion:**
 In this experiment, we successfully implemented a Binary to BCD converter using basic logic gates. By understanding the properties of binary numbers and their corresponding BCD representations, we were able to demonstrate the conversion process. This exercise reinforces the concept of digital number systems and their applications in digital circuits, particularly in systems that require decimal representation of binary numbers, such as digital displays and calculators.
 
-
-## <h1 align='center'>  End of Lab 1 Report  </h1>
