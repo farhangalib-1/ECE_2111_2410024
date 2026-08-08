@@ -417,4 +417,155 @@ $$
 #### After Simplification
 <img width="358" height="233" alt="image" src="https://github.com/user-attachments/assets/2a7b98da-415b-4925-8b61-57ba142bd1ec" />
 
+## Problem 4
+
+Given,
+
+$$
+F(A,B,C)=\left[B'(A+B)+(A+B)(A+B')\right]B'
+$$
+
+### 1st Procedure: using boolean expression
+
+First, simplify the expression to identify the minterms.
+
+Consider,
+
+$$
+B'(A+B)=AB'+B'B
+$$
+
+Since,
+
+$$
+B'B=0
+$$
+
+Therefore,
+
+$$
+B'(A+B)=AB'
+$$
+
+Now,
+
+$$
+(A+B)(A+B')=A
+$$
+
+Therefore,
+
+$$
+F=(AB'+A)B'
+$$
+
+Using the absorption law,
+
+$$
+A+AB'=A
+$$
+
+Therefore,
+
+$$
+F=AB'
+$$
+
+Since $C$ does not appear in the simplified expression, the function is $1$ for both values of $C$ when $A=1$ and $B=0$.
+
+Thus,
+
+$$
+F(A,B,C)=\Sigma m(4,5)
+$$
+
+### 2nd Procedure: using K-Map
+
+Using Gray Code order:
+
+| $AB \backslash C$ | $0$ | $1$ |
+|:---:|:---:|:---:|
+| $00$ | 0 | 0 |
+| $01$ | 0 | 0 |
+| $11$ | 0 | 0 |
+| $10$ | **1** | **1** |
+
+### Step 3: Make the Group
+
+Group the two adjacent 1's:
+
+$$
+m_4,\ m_5
+$$
+
+In this group:
+
+- $A=1$ remains constant.
+- $B=0$ remains constant.
+- $C$ changes.
+
+Therefore, $C$ is eliminated.
+
+The resulting term is:
+
+$$
+AB'
+$$
+
+### Step 4: Write the Simplified Expression
+
+Therefore,
+
+$$
+F=AB'
+$$
+
+### Final Answer:
+
+$$
+\boxed{F=AB'}
+$$
+
+#### Before Simplification
+<img width="759" height="360" alt="image" src="https://github.com/user-attachments/assets/5e165baa-f37f-4822-ba93-b64e71e668aa" />
+
+#### After Simplification
+<img width="428" height="163" alt="image" src="https://github.com/user-attachments/assets/67fdf0f5-ae75-46e6-8e6f-645233a12f49" />
+
+### Discussion
+The experiment demonstrates how Boolean algebra can be used to reduce complicated logical expressions into simpler forms. During simplification, laws such as De Morgan's law, distributive law, complement law, and absorption law were applied.
+
+The first expression was reduced to a three-term majority function:
+
+$$
+AB+AC+BC
+$$
+
+The second expression was reduced directly to $$A$$, showing the usefulness of the absorption law.
+
+The third expression became zero because the expression contains both $$A$$ and $$A'$$
+, whose product is always zero.
+
+The fourth expression was reduced to $$AB'$$
+, significantly reducing the complexity of the original expression.
+
+Thus, Boolean simplification can reduce the number of required logic gates and make digital circuits more efficient.
+
+
+### Conclusion
+
+The given Boolean expressions were successfully simplified using fundamental laws of Boolean algebra. The final simplified expressions were:
+
+$$F1=AB+AC+BC$$
+	​
+
+$$F2=A$$
+	​
+
+$$F3=0$$
+	​
+
+$$F4=AB′$$
+
+The experiment helped in understanding the practical application of Boolean algebra for simplifying and designing digital logic circuits.​
 
